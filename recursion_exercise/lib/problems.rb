@@ -109,5 +109,8 @@ end
 def flatten(data)
     return [data] if data.class == String || data.class == Integer
     return data if data.count == 1
-  data.slice(0)
+  data.slice(0) 
+  #additonal variable to store single elements or 
+  # adding arrays takes away a layer sort of 
+  #itterate and maybe .each on each othe the layer and it breaks them down. 
 end
